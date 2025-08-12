@@ -62,7 +62,7 @@ function carregarImagens(){
 
         {
             nome: 'Peixe9',
-            url: './img/peixe9.webp'
+            url: './img/peixe9.jpg'
         },
 
         {

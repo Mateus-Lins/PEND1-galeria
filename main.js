@@ -1,11 +1,19 @@
 'use strict'
 
-function criarImagem(urlImagem){
+function criarImagem(Imagem){
     const galeria = document.getElementById('galeria')
     const img = document.createElement('img')
-    img.src = urlImagem.url
+    const container = document.createElement('div')
+    const nome = document.createElement('nome')
+
+    img.src = Imagem.url
+    img.alt = Imagem.nome
+    nome.textContent = Imagem.nome
+    nome.classList.add('nome')
 
     galeria.appendChild(img)
+    galeria.appendChild(nome)
+    galeria.appendChild(container)
     
 }
 
